@@ -1,19 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-	This is the EVisi "Main" SolarNode deployment configuration. It defines a basic set of
-	bundles required to run the SolarNode web GUI and allow the node to associate with
-	SolarNetwork. It also adds a common set of plugins to connect to devices in a typical
-	EVisi deployment.
-
-	To use this configuration, pass this file as the `-Divy.file=` argument to Ant, as
-	outlined here:
-
-	https://github.com/SolarNetwork/solarnetwork-build/tree/master/solarnode-deploy/generic
-
-	For example:
-
-		ant -Divy.file=/path/to/ivy-evisi-main.xml clean archive
--->
 <ivy-module version="2.0">
 	<info organisation="SolarNetwork" module="SolarNode"/>
 	<configurations>
