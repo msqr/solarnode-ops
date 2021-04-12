@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	This is the EVisi "Main" SolarNode deployment configuration. It defines a basic set of
+	bundles required to run the SolarNode web GUI and allow the node to associate with
+	SolarNetwork. It also adds a common set of plugins to connect to devices in a typical
+	EVisi deployment.
+
+	To use this configuration, pass this file as the `-Divy.file=` argument to Ant, as
+	outlined here:
+
+	https://github.com/SolarNetwork/solarnetwork-build/tree/master/solarnode-deploy/generic
+
+	For example:
+
+		ant -Divy.file=/path/to/ivy-evisi-main.xml clean archive
+-->
+<ivy-module version="2.0">
+	<info organisation="SolarNetwork" module="SolarNode"/>
+	<configurations>
+		<conf name="runtime" visibility="public" description="The Runtime"/>
+	</configurations>
+	<dependencies defaultconfmapping="runtime->default(runtime)">
+
+		<!-- This moved up here because it pulls in newer minimum version of net.solarnetwork.comm -->
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.samplefilter" rev="latest.release"/>
+
+		<!-- Protocol support -->
+		<dependency org="net.solarnetwork.external" name="net.solarnetwork.external.net.wimpi.modbus" rev="latest.release"/>
+		<dependency org="net.solarnetwork.external" name="net.solarnetwork.external.pcj" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.io.modbus" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.io.modbus.jamod" rev="latest.release"/>
+
+		<!-- Core additional support -->
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.upload.flux" rev="latest.release"/>
+
+		<!-- Data Sources -->
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.hw.schneider" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.price.delimited" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.schneider.pm3200" rev="latest.release"/>
+
+		<!-- Weather -->
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.weather.nz.metservice" rev="latest.release"/>
+		
+		<!-- solarnode-app-core excludes -->
+		<exclude artifact="net.solarnetwork.common"/>
+		<exclude artifact="net.solarnetwork.common.mqtt"/>
+		<exclude artifact="net.solarnetwork.common.web"/>
+		<exclude artifact="net.solarnetwork.node"/>
+		<exclude artifact="net.solarnetwork.node.dao.jdbc"/>
+		<exclude artifact="net.solarnetwork.node.io.mqtt"/>
+		<exclude artifact="net.solarnetwork.node.setup.web"/>
+
+		<!--
+		Use OS-provided RXTX. Remove this to include the SolarNetwork RXTX bundle.
+		See https://github.com/SolarNetwork/solarnetwork/wiki/Node-Using-System-RXTX
+		-->
+		<exclude artifact="net.solarnetwork.external.org.rxtx"/>
+		<exclude artifact="net.solarnetwork.external.jamod.pjc"/>
+		<exclude artifact="net.solarnetwork.external.pjc"/>
+
+		<!-- Global excludes provided by the base system -->
+		<exclude org="commons-(beanutils|codec|collections|digester|fileupload|io)" matcher="regexp"/>
+		<exclude org="com.fasterxml.jackson.core"/>
+		<exclude org="com.fasterxml.jackson.dataformat"/>
+		<exclude org="com.fasterxml.jackson.datatype"/>
+		<exclude org="javax.measure"/>
+		<exclude org="javax.servlet"/>
+		<exclude org="javax.xml.bind"/>
+		<exclude org="io.dvlopt"/>
+		<exclude org="io.netty"/>
+		<exclude org="joda-time"/>
+		<exclude org="net.java.dev.jna"/>
+		<exclude org="net.sf.supercsv"/>
+		<exclude org="org.apache.commons"/>
+		<exclude org="org.apache.servicemix.bundles"/>
+		<exclude org="org.apache.tomcat"/>
+		<exclude org="org.eclipse.paho"/>
+		<exclude org="org.eclipse.virgo.mirrored"/>
+		<exclude org="org.glassfish.tyrus.bundles"/>
+		<exclude org="org.osgi"/>
+		<exclude org="org.quartz-scheduler"/>
+		<exclude org="org.slf4j"/>
+		<exclude org="org.springframework"/>
+		<exclude org="org.springframework.security"/>
+		<exclude org="org.mitre.dsmiley.httpproxy"/>
+		<exclude org="si.uom"/>
+		<exclude org="systems.uom"/>
+		<exclude org="tech.units"/>
+	</dependencies>
+</ivy-module>
