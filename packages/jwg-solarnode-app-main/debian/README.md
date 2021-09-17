@@ -11,7 +11,13 @@ to it). Packaging is done via `make` with [ant][ant] and [fpm][fpm]. To get star
 
 ```sh
 sudo apt-get install git git-lfs ant ruby ruby-dev build-essential
+
+# on Deb < 11:
 sudo gem install --no-ri --no-rdoc fpm
+
+#  OR on Deb 11+
+sudo gem install --no-ri --no-rdoc fpm
+
 
 # if you have solarnetwork-build checked out elsewhere, then
 ln -s /path/to/solarnetwork-build
