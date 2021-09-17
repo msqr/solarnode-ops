@@ -16,7 +16,7 @@ sudo apt-get install git git-lfs ant ruby ruby-dev build-essential
 sudo gem install --no-ri --no-rdoc fpm
 
 #  OR on Deb 11+
-sudo gem install --no-ri --no-rdoc fpm
+sudo gem install --no-document fpm
 
 
 # if you have solarnetwork-build checked out elsewhere, then
