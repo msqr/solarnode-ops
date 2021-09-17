@@ -18,6 +18,7 @@ Includes the following plugins:
 | javax.measure reference implementation              | `n.s.external.indriya`              | 2.0.4 |
 | Modbus Control                                      | `n.s.n.control.modbus`              | 3.0.0 |
 | Modbus Datum Source                                 | `n.s.n.datum.modbus`                | 3.0.0 |
+| Modbus Server (TCP)                                 | `n.s.n.io.modbus.server`            | 2.0.0 |
 | Network Ping Control                                | `n.s.n.control.ping`                | 2.0.0 |
 | New Zealand MetService Weather                      | `n.s.n.datum.weather.nz.metservice` | 4.0.0 |
 | OpenWeatherMap Weather                              | `n.s.n.datum.weather.owm`           | 2.0.0 |
@@ -29,5 +30,8 @@ Includes the following plugins:
 | SMA WebBox Data Source                              | `n.s.n.datum.sma.webbox`            | 1.0.0 |
 | SolarFlux Upload                                    | `n.s.n.upload.flux`                 | 2.0.0 |
 | Storage Service Upload                              | `n.s.n.upload.resource`             | 2.0.0 |
+| SunSpec Inverter Data Source                        | `n.s.n.datum.sunspec.inverter`      | 3.0.0 |
+| SunSpec Power Meter Data Source                     | `n.s.n.datum.sunspec.meter`         | 3.0.0 |
+| SunSpec Support                                     | `n.s.n.hw.sunspec`                  | 3.0.0 |
 | Tariff Datum Filter                                 | `n.s.n.datum.filter.tariff`         | 2.0.0 |
 | Yr Weather                                          | `n.s.n.datum.weather.yr`            | 2.0.0 |

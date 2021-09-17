@@ -9,6 +9,7 @@
 		<!-- Core additional support -->
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.filter.standard" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.filter.tariff" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.io.modbus.server" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.upload.flux" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.upload.resource" rev="latest.release"/>
 
@@ -22,6 +23,7 @@
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.hw.deson" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.hw.hc" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.hw.sma" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.hw.sunspec" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.io.canbus" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.io.s3" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.canbus" rev="latest.release"/>
@@ -34,6 +36,8 @@
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.price.delimited" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.sma.sunnynet" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.sma.webbox" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.sunspec.inverter" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.sunspec.meter" rev="latest.release"/>
 
 		<!-- Weather -->
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.weather.nz.metservice" rev="latest.release"/>
@@ -52,6 +56,8 @@
 		<exclude artifact="net.solarnetwork.node.setup.web"/>
 		
 		<!-- solarnode-app-io-modbus excludes -->
+		<exclude artifact="net.solarnetwork.external.jamod.pjc"/>
+		<exclude artifact="net.solarnetwork.external.pjc"/>
 		<exclude artifact="net.solarnetwork.node.io.modbus"/>
 
 		<!-- solarnode-app-io-serial excludes -->
