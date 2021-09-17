@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0">
+	<info organisation="SolarNetwork" module="SolarNode"/>
+	<configurations>
+		<conf name="runtime" visibility="public" description="The Runtime"/>
+	</configurations>
+	<dependencies defaultconfmapping="runtime->default(runtime)">
+
+		<!-- Core additional support -->
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.filter.standard" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.filter.tariff" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.upload.flux" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.upload.resource" rev="latest.release"/>
+
+		<!-- Controls -->
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.control.camera.ffmpeg" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.control.camera.motion" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.control.modbus" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.control.ping" rev="latest.release"/>
+
+		<!-- Data Sources -->
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.hw.deson" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.hw.hc" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.hw.sma" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.io.canbus" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.io.s3" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.canbus" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.carrel.dts" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.deson.sdm" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.hc.em5600" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.modbus" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.outback.mx60" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.os.stat" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.price.delimited" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.sma.sunnynet" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.sma.webbox" rev="latest.release"/>
+
+		<!-- Weather -->
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.weather.nz.metservice" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.weather.owm" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.weather.yr" rev="latest.release"/>
+		
+		<!-- solarnode-app-core excludes -->
+		<exclude artifact="net.solarnetwork.common"/>
+		<exclude artifact="net.solarnetwork.common.osgi"/>
+		<exclude artifact="net.solarnetwork.common.mqtt"/>
+		<exclude artifact="net.solarnetwork.common.s3"/>
+		<exclude artifact="net.solarnetwork.common.web"/>
+		<exclude artifact="net.solarnetwork.node"/>
+		<exclude artifact="net.solarnetwork.node.dao.jdbc"/>
+		<exclude artifact="net.solarnetwork.node.io.mqtt"/>
+		<exclude artifact="net.solarnetwork.node.setup.web"/>
+		
+		<!-- solarnode-app-io-modbus excludes -->
+		<exclude artifact="net.solarnetwork.node.io.modbus"/>
+
+		<!-- solarnode-app-io-serial excludes -->
+		<exclude artifact="net.solarnetwork.node.io.serial"/>
+
+		<!-- Global excludes provided by the base system -->
+		<exclude org="commons-(beanutils|codec|collections|digester|fileupload|io)" matcher="regexp"/>
+		<exclude org="com.amazonaws"/>
+		<exclude org="com.fasterxml.jackson.core"/>
+		<exclude org="com.fasterxml.jackson.dataformat"/>
+		<exclude org="com.fasterxml.jackson.datatype"/>
+		<exclude org="javax.measure"/>
+		<exclude org="javax.servlet"/>
+		<exclude org="javax.xml.bind"/>
+		<exclude org="io.dvlopt"/>
+		<exclude org="io.netty"/>
+		<exclude org="joda-time"/>
+		<exclude org="net.java.dev.jna"/>
+		<exclude org="net.sf.supercsv"/>
+		<exclude org="org.apache.commons"/>
+		<exclude org="org.apache.servicemix.bundles"/>
+		<exclude org="org.apache.tomcat"/>
+		<exclude org="org.eclipse.paho"/>
+		<exclude org="org.eclipse.virgo.mirrored"/>
+		<exclude org="org.glassfish.tyrus.bundles"/>
+		<exclude org="org.osgi"/>
+		<exclude org="org.quartz-scheduler"/>
+		<exclude org="org.slf4j"/>
+		<exclude org="org.springframework"/>
+		<exclude org="org.springframework.security"/>
+		<exclude org="org.mitre.dsmiley.httpproxy"/>
+		<exclude org="si.uom"/>
+		<exclude org="systems.uom"/>
+		<exclude org="tech.units"/>
+	</dependencies>
+</ivy-module>
