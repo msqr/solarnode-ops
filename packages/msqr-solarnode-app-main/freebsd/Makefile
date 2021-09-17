@@ -1,5 +1,5 @@
 NAME = msqr-solarnode-app-core
-VERSION = 1.0.0_1
+VERSION = 1.1.0_1
 ARCH = all
 PATHS = usr
 SN_BUILD_ROOT = solarnetwork-build
