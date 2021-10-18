@@ -1,10 +1,11 @@
 NAME = msqr-solarnode-app-core
-VERSION = 1.1.0_1
+VERSION = 2.0.0_1
 ARCH = all
 PATHS = usr
 SN_BUILD_ROOT = solarnetwork-build
 DEB_BUILD_ROOT = $(SN_BUILD_ROOT)/solarnode-deploy/generic/build/deb
 IVY_FILE = ${CURDIR}/ivy-msqr-main.xml
+SN_ANT_OPTS =
 
 deb : app-core table
 	fpm -s dir \
@@ -18,7 +19,7 @@ deb : app-core table
 		--vendor 'Matt Magoffin' \
 		--license 'Proprietary' \
 		-f \
-		-d 'solarnode-app-core (>= 1.14.0)' \
+		-d 'solarnode-app-core (>= 2.0)' \
 		$(PATHS)
 
 clean : 
@@ -29,6 +30,7 @@ app-core :
 		"-Divy.file=$(IVY_FILE)" \
 		"-Ddeb.nocopy=1" \
 		"-Ddir.deb.app.path=usr/local/solarnode" \
+		$(SN_ANT_OPTS) \
 		clean deb-package-assemble
 
 table :
