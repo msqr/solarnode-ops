@@ -19,16 +19,17 @@ Includes the following plugins:
 | Modbus Control                                      | `n.s.n.control.modbus`              | 3.0.0 |
 | Modbus Datum Source                                 | `n.s.n.datum.modbus`                | 3.0.0 |
 | Modbus Server (TCP)                                 | `n.s.n.io.modbus.server`            | 2.0.0 |
-| Network Ping Control                                | `n.s.n.control.ping`                | 2.0.0 |
+| Network Ping Control                                | `n.s.n.control.ping`                | 2.1.0 |
 | New Zealand MetService Weather                      | `n.s.n.datum.weather.nz.metservice` | 4.0.0 |
 | OpenWeatherMap Weather                              | `n.s.n.datum.weather.owm`           | 2.0.0 |
-| OS Statistics Data Source                           | `n.s.n.datum.os.stat`               | 2.0.0 |
+| OS Statistics Data Source                           | `n.s.n.datum.os.stat`               | 2.1.0 |
 | Outback MX60 Power Datum DataSource                 | `n.s.n.datum.outback.mx60`          | 2.0.0 |
 | S3 Storage Support                                  | `n.s.n.io.s3`                       | 2.0.0 |
-| SMA Core Support                                    | `n.s.n.hw.sma`                      | 2.0.0 |
+| SMA Core Support                                    | `n.s.n.hw.sma`                      | 2.0.1 |
 | SMA Power Datum DataSource (SunnyNet)               | `n.s.n.datum.sma.sunnynet`          | 2.0.0 |
 | SMA WebBox Data Source                              | `n.s.n.datum.sma.webbox`            | 1.0.0 |
-| SolarFlux Upload                                    | `n.s.n.upload.flux`                 | 2.0.0 |
+| SolarFlux Upload                                    | `n.s.n.upload.flux`                 | 2.1.0 |
+| SolarQuant Datum Source                             | `n.s.n.datum.solarquant`            | 2.0.0 |
 | Storage Service Upload                              | `n.s.n.upload.resource`             | 2.0.0 |
 | SunSpec Inverter Data Source                        | `n.s.n.datum.sunspec.inverter`      | 3.0.0 |
 | SunSpec Power Meter Data Source                     | `n.s.n.datum.sunspec.meter`         | 3.0.0 |

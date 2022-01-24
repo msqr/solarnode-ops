@@ -36,6 +36,7 @@
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.price.delimited" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.sma.sunnynet" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.sma.webbox" rev="latest.release"/>
+		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.solarquant" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.sunspec.inverter" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.sunspec.meter" rev="latest.release"/>
 
