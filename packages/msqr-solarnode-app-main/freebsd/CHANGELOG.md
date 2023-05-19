@@ -1,3 +1,16 @@
+# 3.0.0 - 2023-03-23
+
+Includes the following plugins:
+
+| Name                                       | ID                                  | Vers  |
+|:-------------------------------------------|:------------------------------------|:------|
+| Datum Filters (Standard)                   | `n.s.n.datum.filter.standard`       | 3.0.0 |
+| Delimited Price Datum DataSource           | `n.s.n.datum.price.delimited`       | 3.0.0 |
+| New Zealand MetService Weather             | `n.s.n.datum.weather.nz.metservice` | 5.0.0 |
+| Schneider Electric Hardware Support        | `n.s.n.hw.schneider`                | 4.0.0 |
+| Schneider Electric PM3200 Meter DataSource | `n.s.n.datum.schneider.pm3200`      | 4.0.0 |
+| SolarFlux Upload                           | `n.s.n.upload.flux`                 | 3.0.0 |
+
 # 2.0.0 - 2021-10-18
 
 Includes the following plugins:

@@ -1,5 +1,5 @@
 NAME = msqr-solarnode-app-core
-VERSION = 2.0.0_1
+VERSION = 3.0.0_1
 ARCH = all
 PATHS = usr
 SN_BUILD_ROOT = solarnetwork-build
@@ -19,7 +19,8 @@ deb : app-core table
 		--vendor 'Matt Magoffin' \
 		--license 'Proprietary' \
 		-f \
-		-d 'solarnode-app-core (>= 2.0)' \
+		-d 'solarnode-app-core (>= 3.2)' \
+		-d 'solarnode-app-io-modbus (>= 3.0)' \
 		$(PATHS)
 
 clean : 

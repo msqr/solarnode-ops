@@ -9,11 +9,6 @@
 		<!-- This moved up here because it pulls in newer minimum version of net.solarnetwork.comm -->
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.filter.standard" rev="latest.release"/>
 
-		<!-- Protocol support -->
-		<dependency org="net.solarnetwork.external" name="net.solarnetwork.external.net.wimpi.modbus" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.io.modbus" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.io.modbus.jamod" rev="latest.release"/>
-
 		<!-- Core additional support -->
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.upload.flux" rev="latest.release"/>
 
@@ -33,6 +28,7 @@
 		<exclude artifact="net.solarnetwork.common.web"/>
 		<exclude artifact="net.solarnetwork.node"/>
 		<exclude artifact="net.solarnetwork.node.dao.jdbc"/>
+		<exclude artifact="net.solarnetwork.node.io.modbus"/>
 		<exclude artifact="net.solarnetwork.node.io.mqtt"/>
 		<exclude artifact="net.solarnetwork.node.setup.web"/>
 
