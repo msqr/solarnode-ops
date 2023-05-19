@@ -1,5 +1,5 @@
 NAME = jwg-solarnode-app-main
-VERSION = 2.0.0-5
+VERSION = 3.0.0-1
 PATHS = var
 SN_BUILD_ROOT = ${CURDIR}/solarnetwork-build
 SN_IVY_FILE = ${CURDIR}/ivy-jwg-main.xml
@@ -18,7 +18,7 @@ deb : app-main table
 		--vendor 'Matt Magoffin' \
 		--license 'Proprietary' \
 		-f \
-		-d 'solarnode-app-core (>= 2.3)' \
+		-d 'solarnode-app-core (>= 3.0)' \
 		-d 'solarnode-io-modbus' \
 		-d 'solarnode-io-serial' \
 		--chdir "$(DEB_BUILD_ROOT)" \
