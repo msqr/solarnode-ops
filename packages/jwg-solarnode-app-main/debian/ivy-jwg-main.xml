@@ -1,44 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0">
-	<info organisation="SolarNetwork" module="SolarNode"/>
+	<info organisation="SolarNetwork" module="JWG-SolarNode"/>
 	<configurations>
 		<conf name="runtime" visibility="public" description="The Runtime"/>
 	</configurations>
 	<dependencies defaultconfmapping="runtime->default(runtime)">
 
 		<!-- Core additional support -->
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.filter.standard" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.filter.tariff" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.io.modbus.server" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.upload.flux" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.upload.resource" rev="latest.release"/>
 
 		<!-- Controls -->
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.control.camera.ffmpeg" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.control.camera.motion" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.control.modbus" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.control.ping" rev="latest.release"/>
 
 		<!-- Data Sources -->
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.hw.deson" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.hw.hc" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.hw.sma" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.hw.sunspec" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.io.canbus" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.io.s3" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.canbus" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.carrel.dts" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.deson.sdm" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.hc.em5600" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.modbus" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.outback.mx60" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.os.stat" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.price.delimited" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.sma.sunnynet" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.sma.webbox" rev="latest.release"/>
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.solarquant" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.sunspec.inverter" rev="latest.release"/>
-		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.sunspec.meter" rev="latest.release"/>
 
 		<!-- Weather -->
 		<dependency org="net.solarnetwork.node" name="net.solarnetwork.node.datum.weather.nz.metservice" rev="latest.release"/>
