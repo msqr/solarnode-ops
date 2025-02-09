@@ -1,3 +1,25 @@
+# 3.1.0 - 2024-07-09
+
+Plugins have been removed that now have SNF standard packages available. The complete list of
+plugins is:
+
+| Name                                                | ID                                  | Vers  |
+|:----------------------------------------------------|:------------------------------------|:------|
+| Camera Control via Motion                           | `n.s.n.control.camera.motion`       | 3.0.1 |
+| CAN Bus Communication Support                       | `n.s.n.io.canbus`                   | 3.1.0 |
+| CAN Bus Datum Source                                | `n.s.n.datum.canbus`                | 3.1.0 |
+| Carrel-Electrade Meter Consumption Datum DataSource | `n.s.n.datum.carrel.dts`            | 4.0.0 |
+| Delimited Price Datum DataSource                    | `n.s.n.datum.price.delimited`       | 3.0.3 |
+| Hsiang Cheng Electric EM56XX Meter Datum DataSource | `n.s.n.datum.hc.em5600`             | 4.1.0 |
+| Hsiang Cheng Electric Support                       | `n.s.n.hw.hc`                       | 4.0.0 |
+| javax.measure reference implementation              | `n.s.external.indriya`              | 2.0.4 |
+| Network Ping Control                                | `n.s.n.control.ping`                | 3.0.1 |
+| New Zealand MetService Weather                      | `n.s.n.datum.weather.nz.metservice` | 5.0.1 |
+| OpenWeatherMap Weather                              | `n.s.n.datum.weather.owm`           | 3.0.2 |
+| Outback MX60 Power Datum DataSource                 | `n.s.n.datum.outback.mx60`          | 3.0.0 |
+| SolarQuant Datum Source                             | `n.s.n.datum.solarquant`            | 3.1.0 |
+| Yr Weather                                          | `n.s.n.datum.weather.yr`            | 3.0.0 |
+
 # 3.0.0 - 2023-05-19
 
 The complete list of plugins is:
